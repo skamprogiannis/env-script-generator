@@ -28,8 +28,8 @@ set -e
 
 # --- Configure Git user info ---
 echo "Configuring Git user information..."
-git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
+git config --global user.name "$GIT_NAME"
 
 # --- Configure Git to store credentials globally ---
 echo "Configuring Git credential helper..."

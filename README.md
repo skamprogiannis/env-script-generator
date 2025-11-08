@@ -19,26 +19,34 @@
 
 ### 1. Clone this repository
 
-`git clone https://github.com/YOUR_USERNAME/env-script-generator.git`
+`git clone https://github.com/skamprogiannis/env-script-generator.git`
 `cd env-script-generator`
 
 ### 2. Run the generator
 
-`./generate_setup.sh`
+`bash generate_setup.sh`
 
 You will be prompted to enter:
-- Your gitea name
+
 - Your gitea email
+- Your gitea name
 
 ### 3. Run your personalized setup script
 
 After running the generator, a new script called setup_dev_env.sh will be created. Run it to set up your environment:
 
-`./bash generate_setup.sh`
+`./setup_dev_env.sh`
 
 ### 4. Store the generated file at a convenient location
 
-This can be a gitea repo or a personal matrix room.
+Once your setup_dev_env.sh is generated and verified to work, store it somewhere convenient so you can easily reuse it in future setups.
+You can:
+
+- Push it to your **personal Gitea repository**, or
+- Share it in your **private Element room**, or
+- Keep a backup in your preferred cloud storage.
+
+This way, you can quickly bootstrap any new Linux environment with your personal configuration.
 
 ## Customization
 
@@ -57,3 +65,7 @@ This project is licensed under the **GPL3.0 License.**
 ## Author
 
 Stefanos Kamprogiannis – [gitea Profile](https://platform.zone01.gr/git/skamprog)
+
+## Acknowledgments
+
+Special thanks to [kschrisos](https://platform.zone01.gr/git/kchrisos) for beta testing and bug reports that helped improve this project.
