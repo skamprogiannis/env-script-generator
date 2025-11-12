@@ -1,6 +1,6 @@
 # env-script-generator
 
-**Generate personalized development environment setup scripts** for git, VS Code, and keyboard shortcuts. This tool makes it easy for zone01 piscine candidates to bootstrap their environment on Linux machines with minimal manual configuration.  
+**Generate personalized development environment setup scripts** for git, VS Code, and keyboard shortcuts. This tool makes it easy for zone01 candidates to bootstrap their environment on Linux machines with minimal manual configuration.  
 
 ---
 
@@ -19,12 +19,10 @@
 
 ### 1. Download this repository
 
-This can be done by cloning the repository:
+This can be done by cloning the repository or downloading the zip and extracting the files.
 
 `git clone https://github.com/skamprogiannis/env-script-generator.git`
 `cd env-script-generator`
-
-or downloading the zip and extracting the files.
 
 ### 2. Run the generator
 
@@ -38,7 +36,7 @@ You will be prompted to enter:
 
 ### 3. Run your personalized setup script
 
-After running the generator, a new script called setup_dev_env.sh will be created. You will be prompted to run the script when it is created. You can also run it with the command:
+After running the generator, a new script called setup_dev_env.sh will be created. You will be prompted to run the script. You can also run it with the command:
 
 `./setup_dev_env.sh`
 
