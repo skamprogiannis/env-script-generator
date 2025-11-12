@@ -19,7 +19,7 @@
 
 ### 1. Download this repository
 
-This can be done by cloning the repository
+This can be done by cloning the repository:
 
 `git clone https://github.com/skamprogiannis/env-script-generator.git`
 `cd env-script-generator`
@@ -38,7 +38,7 @@ You will be prompted to enter:
 
 ### 3. Run your personalized setup script
 
-After running the generator, a new script called setup_dev_env.sh will be created. Run it to set up your environment:
+After running the generator, a new script called setup_dev_env.sh will be created. You will be prompted to run the script when it is created. You can also run it with the command:
 
 `./setup_dev_env.sh`
 
