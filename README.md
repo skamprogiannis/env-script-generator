@@ -17,11 +17,14 @@
 
 ## Getting Started
 
-### 1. Clone this repository
+### 1. Download this repository
+
+This can be done by cloning the repository
 
 `git clone https://github.com/skamprogiannis/env-script-generator.git`
 `cd env-script-generator`
 
+or downloading the zip and extracting the files
 ### 2. Run the generator
 
 `bash generate_setup.sh`
