@@ -63,7 +63,7 @@ echo "✅ Generated $OUTPUT_SCRIPT for $GIT_NAME!"
 
 # --- Ask to run the script now ---
 read -p "Do you want to run the generated setup script now? (y/n): " RUN_NOW
-if [[ "\$RUN_NOW" =~ ^[Yy]$ ]]; then
+if if [[ "$RUN_NOW" =~ ^[Yy]([Ee][Ss])?$ ]]; then
     echo "Running $OUTPUT_SCRIPT..."
     bash "./$OUTPUT_SCRIPT"
 else
