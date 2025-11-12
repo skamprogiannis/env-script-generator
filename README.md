@@ -24,7 +24,8 @@ This can be done by cloning the repository
 `git clone https://github.com/skamprogiannis/env-script-generator.git`
 `cd env-script-generator`
 
-or downloading the zip and extracting the files
+or downloading the zip and extracting the files.
+
 ### 2. Run the generator
 
 `bash generate_setup.sh`
@@ -33,6 +34,7 @@ You will be prompted to enter:
 
 - Your gitea email
 - Your gitea name
+- Whether you want to run the generated script
 
 ### 3. Run your personalized setup script
 

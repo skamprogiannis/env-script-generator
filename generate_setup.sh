@@ -60,3 +60,12 @@ EOL
 chmod +x "$OUTPUT_SCRIPT"
 
 echo "✅ Generated $OUTPUT_SCRIPT for $GIT_NAME!"
+
+# --- Ask to run the script now ---
+read -p "Do you want to run the generated setup script now? (y/n): " RUN_NOW
+if [[ "\$RUN_NOW" =~ ^[Yy]$ ]]; then
+    echo "Running $OUTPUT_SCRIPT..."
+    bash "./$OUTPUT_SCRIPT"
+else
+    echo "You can run it later with: ./setup_dev_env.sh"
+fi
