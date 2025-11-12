@@ -1,6 +1,6 @@
 # env-script-generator
 
-**Generate personalized development environment setup scripts** for git, VS Code, and keyboard shortcuts. This tool makes it easy for zone01 piscine talent to bootstrap their environment on Linux machines with minimal manual configuration.  
+**Generate personalized development environment setup scripts** for git, VS Code, and keyboard shortcuts. This tool makes it easy for zone01 piscine candidates to bootstrap their environment on Linux machines with minimal manual configuration.  
 
 ---
 
