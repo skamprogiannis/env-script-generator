@@ -41,7 +41,7 @@ git config --global core.editor "code --wait"
 
 # --- Clone the repository ---
 echo "Cloning repository..."
-git clone "https://platform.zone01.gr/git/$GIT_NAME/piscine-go"
+git clone "https://platform.zone01.gr/git/$GIT_NAME/piscine-go" /home/student/Documents/piscine-go
 
 # --- Set up keyboard layouts (English + Greek) ---
 echo "Setting up keyboard layouts..."

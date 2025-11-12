@@ -9,7 +9,7 @@
 - Configure git user name and email
 - Set up git credential helper to store credentials
 - Set VS Code as the default git commit editor
-- Clone the piscine-go repository automatically
+- Clone the piscine-go repository automatically in Documents
 - Configure keyboard layouts (default: English + Greek)
 - Set up Super + Space shortcut to switch keyboard layouts
 
