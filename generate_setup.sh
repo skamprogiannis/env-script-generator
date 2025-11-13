@@ -55,8 +55,13 @@ echo "Setting VS Code as Git editor..."
 git config --global core.editor "code --wait"
 
 # --- Clone the repository ---
-echo "Cloning repository..."
-git clone "https://platform.zone01.gr/git/$GIT_NAME/piscine-go" /home/student/Documents/piscine-go
+REPO_PATH="/home/student/Documents/piscine-go"
+if [ ! -d "\$REPO_PATH" ]; then
+    echo "Cloning repository..."
+    git clone "https://\${Z01_USERNAME}:\${Z01_PASSWORD}@platform.zone01.gr/git/\${Z01_USERNAME}/piscine-go" "\$REPO_PATH"
+else
+    echo "Repository already exists at \$REPO_PATH. Skipping clone."
+fi
 
 # --- Set up keyboard layouts (English + Greek) ---
 echo "Setting up keyboard layouts..."
