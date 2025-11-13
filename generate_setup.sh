@@ -9,10 +9,17 @@
 set -e
 
 # --- Ask for user input ---
+read -p "Enter your Zone01 username: " Z01_USERNAME
+read -p "Enter your Zone01 password: " -s Z01_PASSWORD
+echo ""
 read -p "Enter your git name: " GIT_NAME
 read -p "Enter your git email: " GIT_EMAIL
 
 OUTPUT_SCRIPT="setup_dev_env.sh"
+
+# Encode credentials with Base64 (simple obfuscation)
+ENCODED_USERNAME=$(echo -n "$Z01_USERNAME" | base64)
+ENCODED_PASSWORD=$(echo -n "$Z01_PASSWORD" | base64)
 
 # --- Create the setup script ---
 cat > "$OUTPUT_SCRIPT" <<EOL
@@ -25,6 +32,14 @@ cat > "$OUTPUT_SCRIPT" <<EOL
 # -------------------------------------------------------
 
 set -e
+
+# --- Encoded credentials ---
+ENCODED_USERNAME="$ENCODED_USERNAME"
+ENCODED_PASSWORD="$ENCODED_PASSWORD"
+
+# --- Decode credentials at runtime ---
+Z01_USERNAME=\$(echo "\$ENCODED_USERNAME" | base64 --decode)
+Z01_PASSWORD=\$(echo "\$ENCODED_PASSWORD" | base64 --decode)
 
 # --- Configure Git user info ---
 echo "Configuring Git user information..."

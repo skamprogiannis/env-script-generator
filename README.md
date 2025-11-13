@@ -30,8 +30,10 @@ This can be done by cloning the repository or downloading the zip and extracting
 
 You will be prompted to enter:
 
-- Your gitea email
-- Your gitea name
+- Your Zone01 username
+- Your Zone01 password
+- Your Gitea email
+- Your Gitea name
 - Whether you want to run the generated script
 
 ### 3. Run your personalized setup script
@@ -45,7 +47,7 @@ After running the generator, a new script called setup_dev_env.sh will be create
 Once your setup_dev_env.sh is generated and verified to work, store it somewhere convenient so you can easily reuse it in future setups.
 You can:
 
-- Push it to your **personal Gitea repository**, or
+- Push it to a personal **prvate Gitea repository**, or
 - Share it in your **private Element room**, or
 - Keep a backup in your preferred cloud storage.
 
@@ -67,7 +69,7 @@ This project is licensed under the **GPL3.0 License.**
 
 ## Author
 
-Stefanos Kamprogiannis – [gitea Profile](https://platform.zone01.gr/git/skamprog)
+Stefanos Kamprogiannis – [Gitea Profile](https://platform.zone01.gr/git/skamprog)
 
 ## Acknowledgments
 
