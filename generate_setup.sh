@@ -69,8 +69,7 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 
 # --- Set up Super + Space shortcut to switch keyboard ---
 echo "Configuring keyboard shortcut (Super + Space)..."
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>space']"
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Shift><Super>space']"
+gsettings set org.gnome.desktop.input-sources.xkb-options "['grp:win_space_toggle']"
 
 # --- Done ---
 echo "✅ Setup complete!"
