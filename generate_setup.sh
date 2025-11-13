@@ -12,8 +12,8 @@ set -e
 read -p "Enter your Zone01 username: " Z01_USERNAME
 read -p "Enter your Zone01 password: " -s Z01_PASSWORD
 echo ""
-read -p "Enter your git name: " GIT_NAME
 read -p "Enter your git email: " GIT_EMAIL
+read -p "Enter your git name: " GIT_NAME
 
 OUTPUT_SCRIPT="setup_dev_env.sh"
 
@@ -69,7 +69,7 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 
 # --- Set up Super + Space shortcut to switch keyboard ---
 echo "Configuring keyboard shortcut (Super + Space)..."
-gsettings set org.gnome.desktop.input-sources.xkb-options "['grp:win_space_toggle']"
+gsettings set org.gnome.desktop.input-sources xkb-options "['grp:win_space_toggle']"
 
 # --- Done ---
 echo "✅ Setup complete!"
